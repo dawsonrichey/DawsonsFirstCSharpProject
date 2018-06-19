@@ -14,6 +14,7 @@ namespace OnlineGroceryModel.Models
 		public double FoodCost { get; set; }
 		public string FoodType { get; set; }
 		public DateTime PublishedOn { get; set; }
+		public decimal? AverageRating { get; set; } 
 	}
 
 }

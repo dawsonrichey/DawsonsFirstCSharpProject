@@ -12,7 +12,9 @@ namespace OnlineGroceryModel
 	{
 		public Context() : base("OnlineGrocery")
 		{
-
+			Database.SetInitializer(new DropCreateDatabaseIfModelChanges<Context>());
+			// Database.SetInitializer(new CreateDatabaseIfNotExists<Context>());
+			// Database.SetInitializer(new DropCreateDatabaseAlways<Context>());
 		}
 		public DbSet<OnlineGrocery> OnlineGroceries { get; set; }
 	}
