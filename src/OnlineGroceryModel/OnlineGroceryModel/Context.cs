@@ -10,7 +10,12 @@ namespace OnlineGroceryModel
 {
 	public class Context : DbContext
 	{
+		public Context() : base("OnlineGrocery")
+		{
+
+		}
 		public DbSet<OnlineGrocery> OnlineGroceries { get; set; }
 	}
+	
 }
 
